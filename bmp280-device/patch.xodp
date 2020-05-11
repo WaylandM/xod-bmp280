@@ -1,0 +1,24 @@
+{
+  "nodes": [
+    {
+      "description": "A BMP280 device.",
+      "id": "HJrGxGPcI",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-self"
+    },
+    {
+      "id": "Hy2ZeMw5U",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    }
+  ]
+}
