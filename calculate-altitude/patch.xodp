@@ -1,2 +1,46 @@
 {
+  "nodes": [
+    {
+      "description": "Altitude in metres.",
+      "id": "HJyl3VPc8",
+      "label": "ALT",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "description": "Atmospheric pressure at sea level in hPa",
+      "id": "Sk3QnVv98",
+      "label": "SeaLev",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "id": "SktAo4wqL",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "description": "Ambient atmospheric pressure in hPa.",
+      "id": "r1Jzn4D9I",
+      "label": "PRESS",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    }
+  ]
 }

@@ -1,2 +1,56 @@
 {
+  "nodes": [
+    {
+      "description": "Pulse on read.",
+      "id": "BJ5uO4w9U",
+      "label": "DONE",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "description": "Update. Trigger read.",
+      "id": "HJywIVwq8",
+      "label": "UPD",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "id": "SJ89UNvq8",
+      "label": "PRESS",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "description": "A BMP280 device.",
+      "id": "SkY_U4D5I",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 0
+      },
+      "type": "@/input-bmp280-device"
+    },
+    {
+      "id": "r1XL8VDcI",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    }
+  ]
 }
