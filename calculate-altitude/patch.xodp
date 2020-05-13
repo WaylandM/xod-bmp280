@@ -1,4 +1,5 @@
 {
+  "description": "Calculate altitude from atmospheric pressure.",
   "nodes": [
     {
       "description": "Altitude in metres.",
@@ -12,7 +13,10 @@
       "type": "xod/patch-nodes/output-number"
     },
     {
-      "description": "Atmospheric pressure at sea level in hPa",
+      "boundLiterals": {
+        "__out__": "101325"
+      },
+      "description": "Atmospheric pressure at sea level in Pascal.",
       "id": "Sk3QnVv98",
       "label": "SeaLev",
       "position": {
@@ -32,7 +36,7 @@
       "type": "xod/patch-nodes/not-implemented-in-xod"
     },
     {
-      "description": "Ambient atmospheric pressure in hPa.",
+      "description": "Ambient atmospheric pressure in Pascal.",
       "id": "r1Jzn4D9I",
       "label": "PRESS",
       "position": {

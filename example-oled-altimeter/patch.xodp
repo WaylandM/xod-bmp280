@@ -1,0 +1,361 @@
+{
+  "links": [
+    {
+      "id": "B1WeFLht9L",
+      "input": {
+        "nodeId": "HketL3KqI",
+        "pinKey": "HJIQ6AY8E"
+      },
+      "output": {
+        "nodeId": "HJegtLhK9L",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "Bk3J2ntqI",
+      "input": {
+        "nodeId": "BJ9vYit9I",
+        "pinKey": "B11QT1qLN"
+      },
+      "output": {
+        "nodeId": "HyP6jhF9U",
+        "pinKey": "H1MN0Vh85U"
+      }
+    },
+    {
+      "id": "BkF9K3K5I",
+      "input": {
+        "nodeId": "BkwcY2YcU",
+        "pinKey": "r1Jzn4D9I"
+      },
+      "output": {
+        "nodeId": "ByGYK3K5U",
+        "pinKey": "SJ89UNvq8"
+      }
+    },
+    {
+      "id": "H1QKK3K5U",
+      "input": {
+        "nodeId": "ByGYK3K5U",
+        "pinKey": "SkY_U4D5I"
+      },
+      "output": {
+        "nodeId": "B1LdKnF5I",
+        "pinKey": "HJrGxGPcI"
+      }
+    },
+    {
+      "id": "HJZac2YqI",
+      "input": {
+        "nodeId": "S1Usqht9I",
+        "pinKey": "BJlHojaWZ"
+      },
+      "output": {
+        "nodeId": "BkwcY2YcU",
+        "pinKey": "HJyl3VPc8"
+      }
+    },
+    {
+      "id": "S19Gj3K5I",
+      "input": {
+        "nodeId": "HketL3KqI",
+        "pinKey": "S1gH6CKIN"
+      },
+      "output": {
+        "nodeId": "S1Usqht9I",
+        "pinKey": "r1H_oipZb"
+      }
+    },
+    {
+      "id": "S1F9YjFq8",
+      "input": {
+        "nodeId": "SkXtFjF98",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "S1YBtjF5U",
+        "pinKey": "ryH6tSt8N"
+      }
+    },
+    {
+      "id": "S1Xyq3F5L",
+      "input": {
+        "nodeId": "rySSKiKqU",
+        "pinKey": "r1H7MwK8E"
+      },
+      "output": {
+        "nodeId": "ByGYK3K5U",
+        "pinKey": "BJ5uO4w9U"
+      }
+    },
+    {
+      "id": "S1qi83F9I",
+      "input": {
+        "nodeId": "Sy0IYiYqU",
+        "pinKey": "SJDbf_YUV"
+      },
+      "output": {
+        "nodeId": "HketL3KqI",
+        "pinKey": "r1DL6CFU4"
+      }
+    },
+    {
+      "id": "SkhF72YcL",
+      "input": {
+        "nodeId": "rySSKiKqU",
+        "pinKey": "S1mxGvKUN"
+      },
+      "output": {
+        "nodeId": "ByPtmhK5L",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "r1I1n2t9I",
+      "input": {
+        "nodeId": "HyP6jhF9U",
+        "pinKey": "rJV0NhU5U"
+      },
+      "output": {
+        "nodeId": "SkzJ32Y5I",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "rJInKjKcL",
+      "input": {
+        "nodeId": "Sy0IYiYqU",
+        "pinKey": "Sy6LZuYIE"
+      },
+      "output": {
+        "nodeId": "rkMntotcL",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "rJtFt3t5U",
+      "input": {
+        "nodeId": "ByGYK3K5U",
+        "pinKey": "HJywIVwq8"
+      },
+      "output": {
+        "nodeId": "ry1RvhFqI",
+        "pinKey": "HJU8CE2lW"
+      }
+    },
+    {
+      "id": "rkwJnhFcU",
+      "input": {
+        "nodeId": "HyP6jhF9U",
+        "pinKey": "rJg4RN3I9I"
+      },
+      "output": {
+        "nodeId": "rySSKiKqU",
+        "pinKey": "rylSGPt8E"
+      }
+    },
+    {
+      "id": "ryujU2t58",
+      "input": {
+        "nodeId": "HketL3KqI",
+        "pinKey": "B11QT1qLN"
+      },
+      "output": {
+        "nodeId": "BJ9vYit9I",
+        "pinKey": "r1DL6CFU4"
+      }
+    },
+    {
+      "id": "ryvatit5I",
+      "input": {
+        "nodeId": "BJ9vYit9I",
+        "pinKey": "HJIQ6AY8E"
+      },
+      "output": {
+        "nodeId": "Hyb3tsFqL",
+        "pinKey": "__out__"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "B1LdKnF5I",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 2
+      },
+      "type": "@/bmp280-device"
+    },
+    {
+      "boundLiterals": {
+        "Bkw-6yqI4": "4",
+        "ByW_2k9IN": "02h",
+        "Hypl61qUE": "4",
+        "S1gH6CKIN": "\"Alt. (m)\""
+      },
+      "id": "BJ9vYit9I",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 6
+      },
+      "type": "wayland/ssd1306-oled-i2c/draw-text"
+    },
+    {
+      "id": "BkwcY2YcU",
+      "position": {
+        "units": "slots",
+        "x": 7,
+        "y": 4
+      },
+      "type": "@/calculate-altitude"
+    },
+    {
+      "id": "ByGYK3K5U",
+      "position": {
+        "units": "slots",
+        "x": 8,
+        "y": 3
+      },
+      "type": "@/read-pressure"
+    },
+    {
+      "id": "ByPtmhK5L",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 9,
+        "y": 4
+      },
+      "type": "xod/patch-nodes/from-bus"
+    },
+    {
+      "id": "HJegtLhK9L",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 7
+      },
+      "type": "xod/patch-nodes/from-bus"
+    },
+    {
+      "boundLiterals": {
+        "Bkw-6yqI4": "32",
+        "ByW_2k9IN": "03h",
+        "Hypl61qUE": "4"
+      },
+      "id": "HketL3KqI",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 7
+      },
+      "type": "wayland/ssd1306-oled-i2c/draw-text"
+    },
+    {
+      "boundLiterals": {
+        "BJ7urnUq8": "02h"
+      },
+      "id": "HyP6jhF9U",
+      "position": {
+        "units": "slots",
+        "x": 10,
+        "y": 5
+      },
+      "type": "wayland/ssd1306-oled-i2c/rotate-display"
+    },
+    {
+      "id": "Hyb3tsFqL",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 6
+      },
+      "type": "xod/patch-nodes/from-bus"
+    },
+    {
+      "boundLiterals": {
+        "HJTIija-W": "1"
+      },
+      "id": "S1Usqht9I",
+      "position": {
+        "units": "slots",
+        "x": 7,
+        "y": 5
+      },
+      "type": "xod/core/format-number"
+    },
+    {
+      "id": "S1YBtjF5U",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 3
+      },
+      "type": "wayland/ssd1306-oled-i2c/ssd1306-oled-i2c-device"
+    },
+    {
+      "id": "SkXtFjF98",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 4
+      },
+      "type": "xod/patch-nodes/to-bus"
+    },
+    {
+      "id": "SkzJ32Y5I",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 9,
+        "y": 5
+      },
+      "type": "xod/patch-nodes/from-bus"
+    },
+    {
+      "id": "Sy0IYiYqU",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 8
+      },
+      "type": "wayland/ssd1306-oled-i2c/send-buffer-to-display"
+    },
+    {
+      "id": "rkMntotcL",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 8
+      },
+      "type": "xod/patch-nodes/from-bus"
+    },
+    {
+      "boundLiterals": {
+        "B13SCNhl-": "0.5"
+      },
+      "id": "ry1RvhFqI",
+      "position": {
+        "units": "slots",
+        "x": 11,
+        "y": 2
+      },
+      "type": "xod/core/clock"
+    },
+    {
+      "id": "rySSKiKqU",
+      "position": {
+        "units": "slots",
+        "x": 10,
+        "y": 4
+      },
+      "type": "wayland/ssd1306-oled-i2c/clear-display"
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "links": [
+    {
+      "id": "HyWdT2F9I",
+      "input": {
+        "nodeId": "HJ8Ha2K98",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "r1R4ThY98",
+        "pinKey": "S1i8fst98"
+      }
+    },
+    {
+      "id": "S1ZSTnY9L",
+      "input": {
+        "nodeId": "r1R4ThY98",
+        "pinKey": "BJ5ZVjFq8"
+      },
+      "output": {
+        "nodeId": "r1rmrsY5I",
+        "pinKey": "HJU8CE2lW"
+      }
+    },
+    {
+      "id": "SyIv62Yc8",
+      "input": {
+        "nodeId": "Hy-vp3FcU",
+        "pinKey": "HJAq-A_8-"
+      },
+      "output": {
+        "nodeId": "r1R4ThY98",
+        "pinKey": "SJusMiKqL"
+      }
+    },
+    {
+      "id": "r1tuT2FqI",
+      "input": {
+        "nodeId": "ByYDpnt98",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "Hy-vp3FcU",
+        "pinKey": "r1yhZRd8W"
+      }
+    },
+    {
+      "id": "rkzdTht58",
+      "input": {
+        "nodeId": "H10rp2KqL",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "r1R4ThY98",
+        "pinKey": "S1XUziFqU"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "ByYDpnt98",
+      "position": {
+        "units": "slots",
+        "x": -10,
+        "y": 1
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 2
+      },
+      "type": "xod/debug/watch"
+    },
+    {
+      "id": "H10rp2KqL",
+      "position": {
+        "units": "slots",
+        "x": -12,
+        "y": 1
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 2
+      },
+      "type": "xod/debug/watch"
+    },
+    {
+      "id": "HJ8Ha2K98",
+      "position": {
+        "units": "slots",
+        "x": -14,
+        "y": 1
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 2
+      },
+      "type": "xod/debug/watch"
+    },
+    {
+      "id": "Hy-vp3FcU",
+      "position": {
+        "units": "slots",
+        "x": -11,
+        "y": 0
+      },
+      "type": "xod/core/count"
+    },
+    {
+      "id": "r1R4ThY98",
+      "position": {
+        "units": "slots",
+        "x": -13,
+        "y": -1
+      },
+      "type": "@/barometer"
+    },
+    {
+      "boundLiterals": {
+        "B13SCNhl-": "0.5"
+      },
+      "id": "r1rmrsY5I",
+      "position": {
+        "units": "slots",
+        "x": -8,
+        "y": -2
+      },
+      "type": "xod/core/clock"
+    }
+  ]
+}

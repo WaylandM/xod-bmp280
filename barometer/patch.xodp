@@ -1,2 +1,279 @@
 {
+  "links": [
+    {
+      "id": "BkBFfiFc8",
+      "input": {
+        "nodeId": "S1XUziFqU",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "HyF-foF5U",
+        "pinKey": "SJ89UNvq8"
+      }
+    },
+    {
+      "id": "Bke7GjFqI",
+      "input": {
+        "nodeId": "rkh-MoF9U",
+        "pinKey": "HJbgVtNvcL"
+      },
+      "output": {
+        "nodeId": "BkQ-GjK58",
+        "pinKey": "HJrGxGPcI"
+      }
+    },
+    {
+      "id": "By_SNjY5I",
+      "input": {
+        "nodeId": "rkh-MoF9U",
+        "pinKey": "Syee4FVw98"
+      },
+      "output": {
+        "nodeId": "BJ5ZVjFq8",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "HkCzfjFcU",
+      "input": {
+        "nodeId": "HyF-foF5U",
+        "pinKey": "SkY_U4D5I"
+      },
+      "output": {
+        "nodeId": "BkQ-GjK58",
+        "pinKey": "HJrGxGPcI"
+      }
+    },
+    {
+      "id": "HksSVoFqI",
+      "input": {
+        "nodeId": "HyF-foF5U",
+        "pinKey": "HJywIVwq8"
+      },
+      "output": {
+        "nodeId": "rkh-MoF9U",
+        "pinKey": "rkmeNFVv98"
+      }
+    },
+    {
+      "id": "HybLNoY9U",
+      "input": {
+        "nodeId": "BkQ-GjK58",
+        "pinKey": "ByxLIgsY5L"
+      },
+      "output": {
+        "nodeId": "HJt0fotcI",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "S1qEEot5U",
+      "input": {
+        "nodeId": "SJusMiKqL",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "HyF-foF5U",
+        "pinKey": "BJ5uO4w9U"
+      }
+    },
+    {
+      "id": "SJASNjK5I",
+      "input": {
+        "nodeId": "BkQ-GjK58",
+        "pinKey": "S1zL8lsKc8"
+      },
+      "output": {
+        "nodeId": "Hyx9AMjtqI",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "SJXKMoK5I",
+      "input": {
+        "nodeId": "S1i8fst98",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "rkh-MoF9U",
+        "pinKey": "ByfeNFNwqU"
+      }
+    },
+    {
+      "id": "SkQLVsKqL",
+      "input": {
+        "nodeId": "BkQ-GjK58",
+        "pinKey": "rJIUgjKqL"
+      },
+      "output": {
+        "nodeId": "Byr0zsYqU",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "rJxUNjt9U",
+      "input": {
+        "nodeId": "BkQ-GjK58",
+        "pinKey": "Hk-LUgiY5I"
+      },
+      "output": {
+        "nodeId": "SkcCMoK9L",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "ryhr4iK5I",
+      "input": {
+        "nodeId": "BkQ-GjK58",
+        "pinKey": "B1m8UgjY5U"
+      },
+      "output": {
+        "nodeId": "rJW50foK9L",
+        "pinKey": "__out__"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "description": "Update. Trigger read of temperature and pressure.",
+      "id": "BJ5ZVjFq8",
+      "label": "UPD",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "id": "BkQ-GjK58",
+      "position": {
+        "units": "slots",
+        "x": -1,
+        "y": 1
+      },
+      "type": "@/bmp280-device"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "03h"
+      },
+      "description": "Operating mode for the sensor. Options: forced mode = 01h, normal mode = 03h.",
+      "id": "Byr0zsYqU",
+      "label": "MODE",
+      "position": {
+        "units": "slots",
+        "x": -1,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-byte"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "02h"
+      },
+      "description": "Oversampling rate for temperature sensor. Options: no over-sampling = 00h, 1x over-sampling = 01h, 2x over-sampling = 02h, 4x over-sampling = 03h, 8x over-sampling = 04h, 16x over-sampling = 05h.",
+      "id": "HJt0fotcI",
+      "label": "OST",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-byte"
+    },
+    {
+      "id": "HyF-foF5U",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 3
+      },
+      "type": "@/read-pressure"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "04h"
+      },
+      "description": "Filtering level for sensor data. Options: no filtering = 00h, 2x filtering = 01h, 4x filtering = 02h, 8x filtering = 03h, 16x filtering = 04h.",
+      "id": "Hyx9AMjtqI",
+      "label": "FILT",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-byte"
+    },
+    {
+      "description": "Atmospheric pressure in Pascal.",
+      "id": "S1XUziFqU",
+      "label": "PRESS",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 4
+      },
+      "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "description": "Temperature in degrees Celsius.",
+      "id": "S1i8fst98",
+      "label": "TEMP",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 4
+      },
+      "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "description": "Pulse on read.",
+      "id": "SJusMiKqL",
+      "label": "DONE",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 4
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "05h"
+      },
+      "description": "Oversampling rate for pressure sensor. Options: no over-sampling = 00h, 1x over-sampling = 01h, 2x over-sampling = 02h, 4x over-sampling = 03h, 8x over-sampling = 04h, 16x over-sampling = 05h.",
+      "id": "SkcCMoK9L",
+      "label": "OSP",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-byte"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "04h"
+      },
+      "description": "Standby duration in milliseconds. Options: 1 ms = 00h, 62.5 ms = 01h, 125 ms = 02h, 250 ms = 03h, 500 ms = 04h, 1000 ms = 05h, 2000 ms = 06h, 4000 ms = 07h.",
+      "id": "rJW50foK9L",
+      "label": "STDBY",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-byte"
+    },
+    {
+      "id": "rkh-MoF9U",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 2
+      },
+      "type": "@/read-temperature"
+    }
+  ]
 }

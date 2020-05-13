@@ -11,6 +11,6 @@ void evaluate(Context ctx) {
 
     // Get a pointer to the `Adafruit_BMP280` class instance
     auto sensor = getValue<input_DEV>(ctx);
-    emitValue<output_PRESS>(ctx, sensor->readTemperature());
+    emitValue<output_TEMP>(ctx, sensor->readTemperature());
     emitValue<output_DONE>(ctx, 1);
 }

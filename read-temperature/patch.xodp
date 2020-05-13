@@ -1,6 +1,8 @@
 {
+  "description": "Read temperature in degrees Celsius. ",
   "nodes": [
     {
+      "description": "Temperature in degrees Celsius.",
       "id": "ByfeNFNwqU",
       "label": "TEMP",
       "position": {

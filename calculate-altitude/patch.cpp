@@ -5,6 +5,10 @@ struct State {
 {{ GENERATED_CODE }}
 
 void evaluate(Context ctx) {
-    //auto inValue = getValue<input_IN>(ctx);
-    //emitValue<output_OUT>(ctx, inValue);
+    float altitude;
+    float pressure = getValue<input_PRESS>(ctx);
+    float seaLevelhPa = getValue<input_SeaLev>(ctx);
+    //pressure /= 100;
+    altitude = 44330 * (1.0 - pow(pressure / seaLevelhPa, 0.1903));
+    emitValue<output_ALT>(ctx, altitude);
 }

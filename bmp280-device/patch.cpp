@@ -33,7 +33,11 @@ void evaluate(Context ctx) {
       raiseError(ctx);
       return;
     }
-
+    uint8_t mode = getValue<input_MODE>(ctx);
+    uint8_t temp = getValue<input_OST>(ctx);
+    uint8_t pressure = getValue<input_OSP>(ctx);
+    uint8_t filter = getValue<input_FILT>(ctx);
+    uint8_t standby = getValue<input_STDBY>(ctx);
+    sensor -> setSampling(mode, temp, pressure, filter, standby);
     emitValue<output_DEV>(ctx, sensor);
-
 }
