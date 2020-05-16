@@ -1,5 +1,5 @@
 {
-  "description": "Read pressure in Pa.",
+  "description": "Read pressure in Pascal.",
   "nodes": [
     {
       "description": "Pulse on read.",

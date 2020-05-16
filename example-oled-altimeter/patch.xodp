@@ -1,4 +1,35 @@
 {
+  "comments": [
+    {
+      "content": "Set SeaLev (atmospheric pressure at sea level) according to current local weather conditions.",
+      "id": "Hk7fFhc5L",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 4
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 6
+      }
+    },
+    {
+      "content": "The rotate-display node is optional. I'm running this on the Grove Beginner Kit, so I've set the rotation to 02h, to get the correct orientation of the screen.",
+      "id": "rJYwuncc8",
+      "position": {
+        "units": "slots",
+        "x": -2,
+        "y": 5
+      },
+      "size": {
+        "height": 2,
+        "units": "slots",
+        "width": 4
+      }
+    }
+  ],
+  "description": "Uses bmp280 as an altimeter and displays altitude on an OLED screen.",
   "links": [
     {
       "id": "B1WeFLht9L",
@@ -180,14 +211,14 @@
       "boundLiterals": {
         "Bkw-6yqI4": "4",
         "ByW_2k9IN": "02h",
-        "Hypl61qUE": "4",
+        "Hypl61qUE": "8",
         "S1gH6CKIN": "\"Alt. (m)\""
       },
       "id": "BJ9vYit9I",
       "position": {
         "units": "slots",
-        "x": 3,
-        "y": 6
+        "x": 11,
+        "y": 5
       },
       "type": "wayland/ssd1306-oled-i2c/draw-text"
     },
@@ -217,7 +248,7 @@
       "label": "DEV",
       "position": {
         "units": "slots",
-        "x": 9,
+        "x": 10,
         "y": 4
       },
       "type": "xod/patch-nodes/from-bus"
@@ -227,8 +258,8 @@
       "label": "DEV",
       "position": {
         "units": "slots",
-        "x": 2,
-        "y": 7
+        "x": 3,
+        "y": 6
       },
       "type": "xod/patch-nodes/from-bus"
     },
@@ -236,13 +267,13 @@
       "boundLiterals": {
         "Bkw-6yqI4": "32",
         "ByW_2k9IN": "03h",
-        "Hypl61qUE": "4"
+        "Hypl61qUE": "8"
       },
       "id": "HketL3KqI",
       "position": {
         "units": "slots",
-        "x": 3,
-        "y": 7
+        "x": 4,
+        "y": 6
       },
       "type": "wayland/ssd1306-oled-i2c/draw-text"
     },
@@ -264,14 +295,14 @@
       "label": "DEV",
       "position": {
         "units": "slots",
-        "x": 2,
-        "y": 6
+        "x": 10,
+        "y": 5
       },
       "type": "xod/patch-nodes/from-bus"
     },
     {
       "boundLiterals": {
-        "HJTIija-W": "1"
+        "HJTIija-W": "0"
       },
       "id": "S1Usqht9I",
       "position": {
@@ -285,8 +316,8 @@
       "id": "S1YBtjF5U",
       "position": {
         "units": "slots",
-        "x": 2,
-        "y": 3
+        "x": 0,
+        "y": 2
       },
       "type": "wayland/ssd1306-oled-i2c/ssd1306-oled-i2c-device"
     },
@@ -295,8 +326,8 @@
       "label": "DEV",
       "position": {
         "units": "slots",
-        "x": 2,
-        "y": 4
+        "x": 0,
+        "y": 3
       },
       "type": "xod/patch-nodes/to-bus"
     },
@@ -315,7 +346,7 @@
       "position": {
         "units": "slots",
         "x": 3,
-        "y": 8
+        "y": 7
       },
       "type": "wayland/ssd1306-oled-i2c/send-buffer-to-display"
     },
@@ -325,7 +356,7 @@
       "position": {
         "units": "slots",
         "x": 2,
-        "y": 8
+        "y": 7
       },
       "type": "xod/patch-nodes/from-bus"
     },
@@ -345,7 +376,7 @@
       "id": "rySSKiKqU",
       "position": {
         "units": "slots",
-        "x": 10,
+        "x": 11,
         "y": 4
       },
       "type": "wayland/ssd1306-oled-i2c/clear-display"

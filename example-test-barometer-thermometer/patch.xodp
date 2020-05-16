@@ -1,4 +1,21 @@
 {
+  "comments": [
+    {
+      "content": "The count node records the number of readings.",
+      "id": "rkcJihq9U",
+      "position": {
+        "units": "slots",
+        "x": -8,
+        "y": 0
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 4
+      }
+    }
+  ],
+  "description": "Patch to test barometer-thermometer node.  Run in debugger.",
   "links": [
     {
       "id": "HyWdT2F9I",
@@ -115,7 +132,7 @@
         "x": -13,
         "y": -1
       },
-      "type": "@/barometer"
+      "type": "@/barometer-thermometer"
     },
     {
       "boundLiterals": {

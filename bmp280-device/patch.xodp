@@ -1,5 +1,5 @@
 {
-  "description": "Create BMP280 device.",
+  "description": "Create BMP280 device. See datasheet (https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BMP280-DS001.pdf) for recommended oversampling and filter settings for specific use cases.",
   "nodes": [
     {
       "boundLiterals": {
