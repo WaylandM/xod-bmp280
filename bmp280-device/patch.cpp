@@ -1,6 +1,7 @@
 // Tell XOD where it could download the library:
 #pragma XOD require "https://github.com/adafruit/Adafruit_Sensor"
 #pragma XOD require "https://github.com/adafruit/Adafruit_BMP280_Library"
+#pragma XOD require "https://github.com/adafruit/Adafruit_BusIO"
 
 //Include C++ libraries
 {{#global}}
@@ -26,8 +27,10 @@ void evaluate(Context ctx) {
 
     auto state = getState(ctx);
 
+    auto wire = getValue<input_I2C>(ctx);
+
     // Create a new object in the memory area reserved previously.
-    Type sensor = new (state->mem) Adafruit_BMP280();
+    Type sensor = new (state->mem) Adafruit_BMP280(wire);
 
     if (!sensor->begin()) {
       raiseError(ctx);

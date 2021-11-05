@@ -141,7 +141,7 @@
       "label": "UPD",
       "position": {
         "units": "slots",
-        "x": 4,
+        "x": 5,
         "y": 0
       },
       "type": "xod/patch-nodes/input-pulse"
@@ -164,7 +164,7 @@
       "label": "MODE",
       "position": {
         "units": "slots",
-        "x": -1,
+        "x": 0,
         "y": 0
       },
       "type": "xod/patch-nodes/input-byte"
@@ -178,7 +178,7 @@
       "label": "OST",
       "position": {
         "units": "slots",
-        "x": 0,
+        "x": 1,
         "y": 0
       },
       "type": "xod/patch-nodes/input-byte"
@@ -201,7 +201,7 @@
       "label": "FILT",
       "position": {
         "units": "slots",
-        "x": 2,
+        "x": 3,
         "y": 0
       },
       "type": "xod/patch-nodes/input-byte"
@@ -248,7 +248,7 @@
       "label": "OSP",
       "position": {
         "units": "slots",
-        "x": 1,
+        "x": 2,
         "y": 0
       },
       "type": "xod/patch-nodes/input-byte"
@@ -262,7 +262,7 @@
       "label": "STDBY",
       "position": {
         "units": "slots",
-        "x": 3,
+        "x": 4,
         "y": 0
       },
       "type": "xod/patch-nodes/input-byte"
