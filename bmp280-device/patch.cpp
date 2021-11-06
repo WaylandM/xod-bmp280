@@ -26,13 +26,13 @@ void evaluate(Context ctx) {
         return;
 
     auto state = getState(ctx);
-
     auto wire = getValue<input_I2C>(ctx);
+    uint8_t i2c_addr = getValue<input_ADDR>(ctx);
 
     // Create a new object in the memory area reserved previously.
     Type sensor = new (state->mem) Adafruit_BMP280(wire);
 
-    if (!sensor->begin()) {
+    if (!sensor->begin(i2c_addr, BMP280_CHIPID)) {
       raiseError(ctx);
       return;
     }

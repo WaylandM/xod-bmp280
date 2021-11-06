@@ -132,6 +132,28 @@
         "nodeId": "rJW50foK9L",
         "pinKey": "__out__"
       }
+    },
+    {
+      "id": "ryXp5J4PF",
+      "input": {
+        "nodeId": "BkQ-GjK58",
+        "pinKey": "rk03oofvF"
+      },
+      "output": {
+        "nodeId": "S1R3qy4wY",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "H1BAsk4vK",
+      "input": {
+        "nodeId": "BkQ-GjK58",
+        "pinKey": "HyNviyVDt"
+      },
+      "output": {
+        "nodeId": "SJWRjyNvF",
+        "pinKey": "__out__"
+      }
     }
   ],
   "nodes": [
@@ -141,7 +163,7 @@
       "label": "UPD",
       "position": {
         "units": "slots",
-        "x": 5,
+        "x": 6,
         "y": 0
       },
       "type": "xod/patch-nodes/input-pulse"
@@ -164,7 +186,7 @@
       "label": "MODE",
       "position": {
         "units": "slots",
-        "x": 0,
+        "x": 1,
         "y": 0
       },
       "type": "xod/patch-nodes/input-byte"
@@ -178,7 +200,7 @@
       "label": "OST",
       "position": {
         "units": "slots",
-        "x": 1,
+        "x": 2,
         "y": 0
       },
       "type": "xod/patch-nodes/input-byte"
@@ -187,7 +209,7 @@
       "id": "HyF-foF5U",
       "position": {
         "units": "slots",
-        "x": 3,
+        "x": 5,
         "y": 3
       },
       "type": "@/read-pressure"
@@ -201,7 +223,7 @@
       "label": "FILT",
       "position": {
         "units": "slots",
-        "x": 3,
+        "x": 4,
         "y": 0
       },
       "type": "xod/patch-nodes/input-byte"
@@ -212,7 +234,7 @@
       "label": "PRESS",
       "position": {
         "units": "slots",
-        "x": 3,
+        "x": 4,
         "y": 4
       },
       "type": "xod/patch-nodes/output-number"
@@ -223,7 +245,7 @@
       "label": "TEMP",
       "position": {
         "units": "slots",
-        "x": 1,
+        "x": 2,
         "y": 4
       },
       "type": "xod/patch-nodes/output-number"
@@ -234,7 +256,7 @@
       "label": "DONE",
       "position": {
         "units": "slots",
-        "x": 5,
+        "x": 6,
         "y": 4
       },
       "type": "xod/patch-nodes/output-pulse"
@@ -248,7 +270,7 @@
       "label": "OSP",
       "position": {
         "units": "slots",
-        "x": 2,
+        "x": 3,
         "y": 0
       },
       "type": "xod/patch-nodes/input-byte"
@@ -262,7 +284,7 @@
       "label": "STDBY",
       "position": {
         "units": "slots",
-        "x": 4,
+        "x": 5,
         "y": 0
       },
       "type": "xod/patch-nodes/input-byte"
@@ -271,10 +293,35 @@
       "id": "rkh-MoF9U",
       "position": {
         "units": "slots",
-        "x": 3,
+        "x": 5,
         "y": 2
       },
       "type": "@/read-temperature"
+    },
+    {
+      "description": "I²C bus.",
+      "id": "S1R3qy4wY",
+      "label": "I2C",
+      "position": {
+        "units": "slots",
+        "x": -1,
+        "y": 0
+      },
+      "type": "xod/i2c/input-i2c"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "77h"
+      },
+      "description": "I²C address (default = 77h)",
+      "id": "SJWRjyNvF",
+      "label": "ADDR",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-byte"
     }
   ]
 }

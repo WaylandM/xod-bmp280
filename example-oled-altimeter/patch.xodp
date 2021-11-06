@@ -367,7 +367,7 @@
       "id": "ry1RvhFqI",
       "position": {
         "units": "slots",
-        "x": 11,
+        "x": 13,
         "y": 2
       },
       "type": "xod/core/clock"

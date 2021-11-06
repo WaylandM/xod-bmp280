@@ -97,10 +97,24 @@
       "label": "I2C",
       "position": {
         "units": "slots",
-        "x": -1,
+        "x": -2,
         "y": 0
       },
       "type": "xod/i2c/input-i2c"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "77h"
+      },
+      "description": "I²C address (default = 77h).",
+      "id": "HyNviyVDt",
+      "label": "ADDR",
+      "position": {
+        "units": "slots",
+        "x": -1,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-byte"
     }
   ]
 }

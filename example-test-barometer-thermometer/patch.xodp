@@ -126,6 +126,9 @@
       "type": "xod/core/count"
     },
     {
+      "boundLiterals": {
+        "SJWRjyNvF": "77h"
+      },
       "id": "r1R4ThY98",
       "position": {
         "units": "slots",
