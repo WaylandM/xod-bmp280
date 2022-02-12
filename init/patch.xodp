@@ -1,0 +1,134 @@
+{
+  "description": "Initialize bmp280-device.",
+  "nodes": [
+    {
+      "boundLiterals": {
+        "__out__": "04h"
+      },
+      "description": "Standby duration in milliseconds. Options: 1 ms = 00h, 62.5 ms = 01h, 125 ms = 02h, 250 ms = 03h, 500 ms = 04h, 1000 ms = 05h, 2000 ms = 06h, 4000 ms = 07h.",
+      "id": "BkWS3DB15",
+      "label": "STDBY",
+      "position": {
+        "units": "slots",
+        "x": 6,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-byte"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "02h"
+      },
+      "description": "Oversampling rate for temperature sensor. Options: no over-sampling = 00h, 1x over-sampling = 01h, 2x over-sampling = 02h, 4x over-sampling = 03h, 8x over-sampling = 04h, 16x over-sampling = 05h.",
+      "id": "Syg-BnDByq",
+      "label": "OST",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-byte"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "05h"
+      },
+      "description": "Oversampling rate for pressure sensor. Options: no over-sampling = 00h, 1x over-sampling = 01h, 2x over-sampling = 02h, 4x over-sampling = 03h, 8x over-sampling = 04h, 16x over-sampling = 05h.",
+      "id": "BJGZS3DSk9",
+      "label": "OSP",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-byte"
+    },
+    {
+      "id": "rkXWHnDH19",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "04h"
+      },
+      "description": "Filtering level for sensor data. Options: no filtering = 00h, 2x filtering = 01h, 4x filtering = 02h, 8x filtering = 03h, 16x filtering = 04h.",
+      "id": "Sk4ZBhvHk5",
+      "label": "FILT",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-byte"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "03h"
+      },
+      "description": "Operating mode for the sensor. Options: forced mode = 01h, normal mode = 03h.",
+      "id": "ryHWS2DSyq",
+      "label": "MODE",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-byte"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "77h"
+      },
+      "description": "I²C address (default = 77h).",
+      "id": "rJDbSnvBkc",
+      "label": "ADDR",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-byte"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "On Boot"
+      },
+      "description": "Initialize sensor.",
+      "id": "H1_brnPBJ9",
+      "label": "INIT",
+      "position": {
+        "units": "slots",
+        "x": 7,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "description": "Pulse on successful initialization.",
+      "id": "ByF-HnDByq",
+      "label": "OK",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "description": "A bmp280-device.",
+      "id": "Bkcu0DSJ5",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 0
+      },
+      "type": "@/input-bmp280-device"
+    }
+  ]
+}

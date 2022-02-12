@@ -2,34 +2,6 @@
   "description": "Create BMP280 device. See datasheet (https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BMP280-DS001.pdf) for recommended oversampling and filter settings for specific use cases.",
   "nodes": [
     {
-      "boundLiterals": {
-        "__out__": "04h"
-      },
-      "description": "Standby duration in milliseconds. Options: 1 ms = 00h, 62.5 ms = 01h, 125 ms = 02h, 250 ms = 03h, 500 ms = 04h, 1000 ms = 05h, 2000 ms = 06h, 4000 ms = 07h.",
-      "id": "B1m8UgjY5U",
-      "label": "STDBY",
-      "position": {
-        "units": "slots",
-        "x": 4,
-        "y": 0
-      },
-      "type": "xod/patch-nodes/input-byte"
-    },
-    {
-      "boundLiterals": {
-        "__out__": "02h"
-      },
-      "description": "Oversampling rate for temperature sensor. Options: no over-sampling = 00h, 1x over-sampling = 01h, 2x over-sampling = 02h, 4x over-sampling = 03h, 8x over-sampling = 04h, 16x over-sampling = 05h.",
-      "id": "ByxLIgsY5L",
-      "label": "OST",
-      "position": {
-        "units": "slots",
-        "x": 1,
-        "y": 0
-      },
-      "type": "xod/patch-nodes/input-byte"
-    },
-    {
       "description": "A BMP280 device.",
       "id": "HJrGxGPcI",
       "label": "DEV",
@@ -41,20 +13,6 @@
       "type": "xod/patch-nodes/output-self"
     },
     {
-      "boundLiterals": {
-        "__out__": "05h"
-      },
-      "description": "Oversampling rate for pressure sensor. Options: no over-sampling = 00h, 1x over-sampling = 01h, 2x over-sampling = 02h, 4x over-sampling = 03h, 8x over-sampling = 04h, 16x over-sampling = 05h.",
-      "id": "Hk-LUgiY5I",
-      "label": "OSP",
-      "position": {
-        "units": "slots",
-        "x": 2,
-        "y": 0
-      },
-      "type": "xod/patch-nodes/input-byte"
-    },
-    {
       "id": "Hy2ZeMw5U",
       "position": {
         "units": "slots",
@@ -64,57 +22,15 @@
       "type": "xod/patch-nodes/not-implemented-in-xod"
     },
     {
-      "boundLiterals": {
-        "__out__": "04h"
-      },
-      "description": "Filtering level for sensor data. Options: no filtering = 00h, 2x filtering = 01h, 4x filtering = 02h, 8x filtering = 03h, 16x filtering = 04h.",
-      "id": "S1zL8lsKc8",
-      "label": "FILT",
-      "position": {
-        "units": "slots",
-        "x": 3,
-        "y": 0
-      },
-      "type": "xod/patch-nodes/input-byte"
-    },
-    {
-      "boundLiterals": {
-        "__out__": "03h"
-      },
-      "description": "Operating mode for the sensor. Options: forced mode = 01h, normal mode = 03h.",
-      "id": "rJIUgjKqL",
-      "label": "MODE",
-      "position": {
-        "units": "slots",
-        "x": 0,
-        "y": 0
-      },
-      "type": "xod/patch-nodes/input-byte"
-    },
-    {
       "description": "I²C bus.",
       "id": "rk03oofvF",
       "label": "I2C",
       "position": {
         "units": "slots",
-        "x": -2,
+        "x": 0,
         "y": 0
       },
       "type": "xod/i2c/input-i2c"
-    },
-    {
-      "boundLiterals": {
-        "__out__": "77h"
-      },
-      "description": "I²C address (default = 77h).",
-      "id": "HyNviyVDt",
-      "label": "ADDR",
-      "position": {
-        "units": "slots",
-        "x": -1,
-        "y": 0
-      },
-      "type": "xod/patch-nodes/input-byte"
     }
   ]
 }

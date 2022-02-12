@@ -127,6 +127,7 @@
     },
     {
       "boundLiterals": {
+        "HkMVG_Hk5": "On Boot",
         "SJWRjyNvF": "77h"
       },
       "id": "r1R4ThY98",
@@ -144,7 +145,7 @@
       "id": "r1rmrsY5I",
       "position": {
         "units": "slots",
-        "x": -8,
+        "x": -5,
         "y": -2
       },
       "type": "xod/core/clock"

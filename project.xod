@@ -2,5 +2,5 @@
   "description": "BMP280 barometric pressure and temperature sensor. Wraps https://github.com/adafruit/Adafruit_BMP280_Library.  Datasheet: https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BMP280-DS001.pdf",
   "license": "BSD-3-Clause",
   "name": "bmp280-barometer",
-  "version": "0.0.4"
+  "version": "0.0.5"
 }

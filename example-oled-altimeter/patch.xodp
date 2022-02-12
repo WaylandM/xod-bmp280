@@ -6,7 +6,7 @@
       "position": {
         "units": "slots",
         "x": 1,
-        "y": 4
+        "y": 5
       },
       "size": {
         "height": 1,
@@ -20,7 +20,7 @@
       "position": {
         "units": "slots",
         "x": -2,
-        "y": 5
+        "y": 6
       },
       "size": {
         "height": 2,
@@ -195,6 +195,50 @@
         "nodeId": "Hyb3tsFqL",
         "pinKey": "__out__"
       }
+    },
+    {
+      "id": "SJdgVuB1q",
+      "input": {
+        "nodeId": "ry40mOS1c",
+        "pinKey": "Bkcu0DSJ5"
+      },
+      "output": {
+        "nodeId": "B1LdKnF5I",
+        "pinKey": "HJrGxGPcI"
+      }
+    },
+    {
+      "id": "SJdZVuBk5",
+      "input": {
+        "nodeId": "Byf-EOB1q",
+        "pinKey": "Bkh8A_Sv1-"
+      },
+      "output": {
+        "nodeId": "ry40mOS1c",
+        "pinKey": "ByF-HnDByq"
+      }
+    },
+    {
+      "id": "BJelHrVOrJ9",
+      "input": {
+        "nodeId": "S1d4E_ryq",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "Byf-EOB1q",
+        "pinKey": "HkyxURuSPyW"
+      }
+    },
+    {
+      "id": "rJxUNuByc",
+      "input": {
+        "nodeId": "ry1RvhFqI",
+        "pinKey": "r1jzp_DTZ"
+      },
+      "output": {
+        "nodeId": "SyiBNuByq",
+        "pinKey": "__out__"
+      }
     }
   ],
   "nodes": [
@@ -203,7 +247,7 @@
       "position": {
         "units": "slots",
         "x": 5,
-        "y": 2
+        "y": 1
       },
       "type": "@/bmp280-device"
     },
@@ -218,7 +262,7 @@
       "position": {
         "units": "slots",
         "x": 11,
-        "y": 5
+        "y": 6
       },
       "type": "wayland/ssd1306-oled-i2c/draw-text"
     },
@@ -230,7 +274,7 @@
       "position": {
         "units": "slots",
         "x": 7,
-        "y": 4
+        "y": 5
       },
       "type": "@/calculate-altitude"
     },
@@ -238,7 +282,7 @@
       "id": "ByGYK3K5U",
       "position": {
         "units": "slots",
-        "x": 8,
+        "x": 9,
         "y": 3
       },
       "type": "@/read-pressure"
@@ -249,7 +293,7 @@
       "position": {
         "units": "slots",
         "x": 10,
-        "y": 4
+        "y": 5
       },
       "type": "xod/patch-nodes/from-bus"
     },
@@ -259,7 +303,7 @@
       "position": {
         "units": "slots",
         "x": 3,
-        "y": 6
+        "y": 7
       },
       "type": "xod/patch-nodes/from-bus"
     },
@@ -273,7 +317,7 @@
       "position": {
         "units": "slots",
         "x": 4,
-        "y": 6
+        "y": 7
       },
       "type": "wayland/ssd1306-oled-i2c/draw-text"
     },
@@ -286,7 +330,7 @@
       "position": {
         "units": "slots",
         "x": 3,
-        "y": 5
+        "y": 6
       },
       "type": "wayland/ssd1306-oled-i2c/rotate-display"
     },
@@ -296,7 +340,7 @@
       "position": {
         "units": "slots",
         "x": 10,
-        "y": 5
+        "y": 6
       },
       "type": "xod/patch-nodes/from-bus"
     },
@@ -308,7 +352,7 @@
       "position": {
         "units": "slots",
         "x": 7,
-        "y": 5
+        "y": 6
       },
       "type": "xod/core/format-number"
     },
@@ -317,7 +361,7 @@
       "position": {
         "units": "slots",
         "x": 0,
-        "y": 2
+        "y": 1
       },
       "type": "wayland/ssd1306-oled-i2c/ssd1306-oled-i2c-device"
     },
@@ -327,7 +371,7 @@
       "position": {
         "units": "slots",
         "x": 0,
-        "y": 3
+        "y": 2
       },
       "type": "xod/patch-nodes/to-bus"
     },
@@ -337,7 +381,7 @@
       "position": {
         "units": "slots",
         "x": 2,
-        "y": 5
+        "y": 6
       },
       "type": "xod/patch-nodes/from-bus"
     },
@@ -346,7 +390,7 @@
       "position": {
         "units": "slots",
         "x": 3,
-        "y": 7
+        "y": 8
       },
       "type": "wayland/ssd1306-oled-i2c/send-buffer-to-display"
     },
@@ -356,7 +400,7 @@
       "position": {
         "units": "slots",
         "x": 2,
-        "y": 7
+        "y": 8
       },
       "type": "xod/patch-nodes/from-bus"
     },
@@ -367,7 +411,7 @@
       "id": "ry1RvhFqI",
       "position": {
         "units": "slots",
-        "x": 13,
+        "x": 14,
         "y": 2
       },
       "type": "xod/core/clock"
@@ -377,9 +421,50 @@
       "position": {
         "units": "slots",
         "x": 11,
-        "y": 4
+        "y": 5
       },
       "type": "wayland/ssd1306-oled-i2c/clear-display"
+    },
+    {
+      "boundLiterals": {
+        "rJDbSnvBkc": "77h"
+      },
+      "id": "ry40mOS1c",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 2
+      },
+      "type": "@/init"
+    },
+    {
+      "id": "Byf-EOB1q",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 3
+      },
+      "type": "xod/core/flip-flop"
+    },
+    {
+      "id": "S1d4E_ryq",
+      "label": "INTD",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 4
+      },
+      "type": "xod/patch-nodes/to-bus"
+    },
+    {
+      "id": "SyiBNuByq",
+      "label": "INTD",
+      "position": {
+        "units": "slots",
+        "x": 14,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/from-bus"
     }
   ]
 }
